@@ -1,4 +1,4 @@
-# GBDays 2014 Slides
+# GBIFDays 2014 Slides
 
 ## What is it?
 This presentation was made for the GBIF Days on 20th November 2014.
