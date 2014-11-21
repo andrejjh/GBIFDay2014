@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GBIF Day, November 20th 2014</title>
+
+		<meta name="description" content="GBIF">
+		<meta name="author" content="André heughebaert">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+	if( window.location.search.match( /print-pdf/gi ) ) {
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = 'css/print/pdf.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	}
+</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3><a href="http://www.gbif.org">Global Biodiversity Information Facility</a></h3>
+					<p>Free and Open Access to Biodiversity Data<br>discover, query, download and use GBIF mediated data</p>
+					<hr>
+					<p><small>Seminar at Biodiversity Research Centre, UCL<br>20th Novembre 2014</small></p>
+					<img src="images/GBIF_logo_130pix.jpg" alt="GBIF">
+					<img src="images/BBPF logo.png" alt="BBPF">
+					<p>
+						<small>André Heughebaert <br> <a href="http://www.biodiversity.be">Belgian Biodiversity Platform</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Contents</h2>
+					<hr>
+					<ol>
+						<li><a href="#/GBIF">About GBIF</a></li>
+						<li><a href="#/Definitions">Definitions</a></li>
+						<li><a href="#/Services">Services</a></li>
+						<img height= 100 src="images/GBIF_org.png" alt="???">
+
+						<li><a href="#/Discovering">Discovering</a></li>
+						<li><a href="#/Querying">Querying</a></li>
+						<li><a href="#/Downloading">Downloading</a></li>
+						<li><a href="#/Using">Using</a></li>
+						<li><a href="#/Publishing">Publishing</a></li>
+					</ol>
+
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section id="GBIF">
+						<h2>1. About GBIF</h2>
+						<hr>
+						<ul>
+							<li>GBIF arose from a recommendation in 1999 by the Biodiversity Informatics Subgroup of the Megascience Forum, set up by the Organization for Economic Cooperation and Development (OECD).</li>
+							<li class="fragment">GBIF vision: <br><i>"A world in which biodiversity information is freely and universally available for science, society and a sustainable future."</i></li>
+							<li class="fragment">By encouraging and helping institutions to publish data according to common standards, GBIF enables research not possible before, and informs better decisions to conserve and sustainably use the biological resources of the planet.</li>
+						</ul>
+						<p class="fragment"><small>see <a href="http://www.gbif.org/resources/2765">GBIF and Open Access</a></small></p>
+					</section>
+					<section>
+						<h4>1. About GBIF</h4>
+						<h3>Governance</h3>
+						<hr>
+						<ul>
+							<li>GBIF is an international open data infrastructure, funded by governments.</li>
+							<li class="fragment">It operates through a network of nodes, coordinating the biodiversity information facilities of Participant countries and organizations, collaborating with each other and the Secretariat to share skills, experiences and technical capacity.</li>
+							<li class="fragment">Secretariat is located at Copenhagen, Denmark.</li>
+							<li class="fragment">Governing board is convened once a year.</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h4>1. About GBIF</h4>
+						<h3>Key Documents</h3>
+						<hr>
+						<ul>
+							<li><u>Participants countries</u> sign a non-binding <a href="http://www.gbif.org/resources/2605">Memorandum of Understanding</a></li>
+							<li><u>Data Publishers</u> sign the <a href="http://www.gbif.org/resources/2910">Data Sharing agreement</a></li>
+							<li><u>Data Users</u> sign the <a href="http://www.gbif.org/resources/2909">Data Use agreement</a></li>
+						</ul>
+					</section>
+					<section>
+						<h4>1. About GBIF</h4>
+						<h3>Participants</h3>
+						<hr>
+						<img src="images/GBIF-WORLD-MAP.png" alt="???">
+						<p>53 Countries Participants + 40 Associated Participants</p>
+
+					</section>
+				</section>
+
+				<section>
+					<section id="Definitions">
+						<h2>2. Definitions</h2>
+						<hr>
+						<ul>
+							<li><b>Open data</b> is the idea that certain data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control.</li>
+							<li class="fragment">(Species) <b>Occurrence Data</b>: evidence of the presence(or absence) of a species at certain time, at certain place.</li>
+							<li class="fragment">(Species) <b>Checklist</b>: A list of accepted (or not) taxa assembled for a certain purpose.</li>
+							<li class="fragment"><b>DarwinCore Archive</b> (DwC-A): is a Biodiversity informatics data standard that makes use of the Darwin Core terms to produce a single, self-contained dataset for species occurrence or checklist data.</li>
+							<li class="fragment"><b>Metadata</b>: Data about the data such as author, geographic and time scope, methodology...</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section id="Services">
+						<h2>3. Services</h2>
+						<hr>
+						<img height="400" src="images/GBIF_org.png" alt="???">
+						<p>Portal for visitors and webservices for applications.</p>
+					</section>
+					<section>
+						<h4>3. Services</h4>
+						<h3>GBIF.org</h3>
+						<hr>
+						<ul>
+							<li>Data Users</li>
+							<ul>
+								<li>Discovery</li>
+								<li>Query</li>
+								<li>Download</li>
+							</ul>
+							<li>Data Publishers</li>
+							<ul>
+								<li>Usage statistics</li>
+								<li>Indexing issues</li>
+							</ul>
+						</section>
+						<section>
+							<h4>3. Services</h4>
+							<h3>Web services (JSON)</h3>
+							<hr>
+							<ul>
+								<li>Species names (fuzzy) matching</li>
+								<li>Data Download</li>
+								<li>Registry (metadata)</li>
+							</ul>
+<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+{"usageKey":2440447,"scientificName":"Tursiops truncatus (Montagu, 1821)",
+"canonicalName":"Tursiops truncatus","rank":"SPECIES","synonym":false,
+"confidence":100,"matchType":"EXACT","kingdom":"Animalia","phylum":"Chordata",
+"order":"Cetacea","family":"Delphinidae","genus":"Tursiops","species":"Tursiops truncatus",
+"kingdomKey":1,"phylumKey":44,"classKey":359,"orderKey":733,"familyKey":5314,
+"genusKey":2440446,"speciesKey":2440447,"class":"Mammalia"}
+</code></pre>
+
+	</section>
+	<section>
+		<h4>3. Services</h4>
+		<h3><a href="http://www.mendeley.com/groups/1068301/gbif-public-library/">Mendeley GBIF Library</a></h3>
+		<hr>
+		<hr>
+		<img src="images/GBIFMendeley.png" alt="???">
+		<p><small>Close to 2.000 peer-reviewed research publications have cited GBIF as a source of data, in studies spanning the impacts of climate change, the spread of pests and diseases, priority areas for conservation and food security. About 20 such papers are published each month.</small></p>
+		</section>
+		<section>
+			<h4>3. Services</h4>
+			<h3>Other tools</h3>
+			<hr>
+			<ul>
+				<li><a href="http://www.gbif.org/ipt">Integrated Publishing Tookit for Publishers</a></li>
+				<li><a href="http://www.gbif.org/publishingdata/datapapers">Peer reviewed Data papers</a></li>
+				<li>Data portal for Participants Country or thematics Nodes</li>
+			</ul>
+		</section>
+	</section>
+		<section>
+			<blockquote>Live Demo</blockquote>
+			<ol>
+				<li>Signin to GBIF.org</li>
+				<li>How to Dowload?</li>
+				<li>Explore data+metadata</li>
+				<li>Play with data</li>
+					<ul>	
+						<li>Paraguayan Types : SQLite, LibreOffice, multimedia</li>
+						<li><i>Milvus milvus : SQLite, OpenRefine, QGIS</i></li>
+						<li>ARABEL : SQLite, QGIS</li>
+					</ul>
+				<li>Feedback to GBIF and Data Publishers</li>
+			</ol>
+	</section>
+
+	<section id="Discovering">
+		<section>
+			<h2>4. Discovering</h2>
+			<hr>
+			<img  height="400" src="images/GBIF_org.png" alt="???">
+			<ol>Prerequisite:
+				<li>Signin on <a href="http://www.gbif.org">www.gbif.org</a></li>
+				<li>Accept the Data Use Agreement</li>
+			</ol>
+		</section>
+		<section>
+			<h4>4. Discovering</h4>
+			<h3>Data distribution</h3>
+			<hr>
+			<img src="images/GBIFgeorefData.png" alt="???">
+			<p><small>Density of georeferenced species occurrence records through GBIF</small></p>
+			<p>500 millions occurrences records on 1.5 million species</p>
+		</section>
+		<section>
+			<h4>4. Discovering</h4>
+			<h2>Explore occurrences</h2>
+			<hr>
+			<ul>
+				<li>Explore Species <i>(eg <a href="http://www.gbif.org/occurrence/search?TAXON_KEY=5229168">Milvus milvus</a>)</i></li>
+				<li>Explore Datasets <i>(eg <a href="http://www.gbif.org/dataset/fc992520-9e66-11dc-8738-b8a03c50a862">ARABEL</a>)</i></li>
+				<li>Explore by Countries<i>(eg <a href="http://www.gbif.org/occurrence/search?COUNTRY=PY">Paraguay</a>)</i></li>
+			</ul>
+		</section>
+	</section>
+
+	<section id="Querying">
+		<h2>5. Querying</h2>
+		<hr>
+		<img  height="400" src="images/GBIF_Search.png" alt="???">
+		<p>Adding Multimedia filter on Paraguayan Types</p>
+	</section>
+
+
+	<section id="Downloading">
+		<section>
+			<h2>6. Downloading</h2>
+			<hr>
+			<img  height="400" src="images/GBIF_Download.png" alt="???">
+		</section>
+		<section>
+			<h4>6. Downloading</h4>
+			<hr>
+			<img  src="images/DownloadFolder.png" alt="???">
+			<ul>
+				<li><b>Citations.txt</b>: How to cite your sources?</li>
+				<li><b>Occurrence.txt</b>: Data indexed by GBIF</li>
+				<li><b>Rights.txt</b>: Some possible restriction of use</li>
+				<li><b>Verbatim.txt</b>: Original Data by data publisher</li>
+				<li><b>Multimedia.txt</b>: related Mutlimedia URL</li>
+			</ul>
+		</section>
+		<section>
+			<h4>6. Downloading</h4>
+			<h2>Indexed</h2>
+<pre><code data-trim contenteditable>
+931143641 PRESERVED_SPECIMEN PY Tetragonoschema Thomson, 1857 National Museum of the Czech Republic Paraguay San Bernardino LECTOTYPE 167acd5c-9459-4e2d-86a1-ee9d6f5e5893 BIOCASE	2014-07-30T20:50Z 2014-11-07T14:19Z
+</code></pre>
+<hr>
+			<h2>Verbatim</h2>
+<pre><code data-trim contenteditable>
+931143641 PreservedSpecimen Paraguay Tetragonoschema medium Obenberger, National Museum of the Czech Republic Paraguay San Bernardino 1922 lectotype
+</code></pre>
+	</section>
+		<section>
+			<h4>6. Downloading</h4>
+			<h2>Multimedia</h2>
+			<img  src="images/multimedia_931143641.jpg" alt="???">
+			<p><small><i>Tetragono schema</i> Thomson, 1857. Lectotype from National Museum of the Czech Republic</small></p>
+<pre><code data-trim contenteditable>
+885974538				http://collections.mnh.si.edu/media/index.php?irn=10064047										
+888459823				http://collections.mnh.si.edu/media/index.php?irn=10089749										
+931143641	StillImage	image/jpeg	http://pm.nm.cz/OpenUpData/Entomologie/Fotky/E143.jpg										Creative Commons (CC-by)	
+888458933				http://collections.mnh.si.edu/media/index.php?irn=10050268										
+</code></pre>
+	</section>
+			<section>
+			<h4>6. Downloading</h4>
+			<h2>Back to your downloads</h2>
+			<hr>
+			<img  height="400" src="images/GBIF_YourDownloads.png" alt="???">
+		</section>
+	</section>
+
+	<section id="Using">
+		<section>
+		<h2>7. Using</h2>
+		<hr>
+		<h4><a href="http://www.gbif.org/resources/2909">Data User Agreement</a></h4>
+		<ol><small>
+			<li>The quality and completeness of data <u>cannot be guaranteed</u>. Users employ these data at their own risk.</li>
+			<li>Users shall <u>respect restrictions</u> of access to sensitive data.</li>
+			<li>In order to make attribution of use for owners of the data possible, the identifier of <u>ownership of data must be retained</u> with every data record.</li>
+			<li>Users <u>must publicly acknowledge</u>, in conjunction with the use of the data, the Data Publishers whose biodiversity data they have used. Data Publishers may require additional attribution of specific collections within their institution.</li>
+			<li>Users <u>must comply with additional terms and conditions of use</u> set by the Data Publisher. Where these exist they will be available through the metadata associated with the data.</li>
+		</small></ol>
+		<div class="fragment">
+<blockquote>
+	Will evolve towards <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a> or <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a>
+</blockquote>
+<img src="images/cc-zero.png" alt="CC-0">
+<img src="images/cc-by.png" alt="CC-BY">
+	</div>
+		</section>
+
+	<section>
+		<h4>7. Using</h4>
+		<h2>Free to use Tools</h2>
+		<hr>
+<img src="images/Rlogo.jpg" alt="R">
+<img src="images/Logo_qgis.png" alt="QGIS">
+<img src="images/LibreOffice_logo.png" alt="LibreOffice">
+<img src="images/logo-openrefine.png" alt="OpenRefine">
+<img src="images/sqlite-logo.png" alt="SQLite">
+<img src="images/postgreSQL.png" alt="Postgres">
+		<ul>
+			<li>Stats Computing: <a href="http://www.r-project.org/">R</a></li>
+			<li>GIS: <a href="http://www.qgis.org/">Quantum GIS</a></li>
+			<li>Spreadsheet: <a href="http://www.libreoffice.org">LibreOffice</a>, <a href="http://www.openrefine.org">Open Refine</a></li>
+			<li>Store/Organize: <a href="http://www.sqlite.org">SQLite</a>, <a href="http://www.postgresql.org">PostgreSQL</a>, NoSQL</li>
+			<li>Scripting language : Python, Ruby...</li>
+		</ul>
+	</section>
+
+	<section>
+		<h4>7. Using</h4>
+		<h2><a href="http://www.sqlite.org">SQLite</a></h2>
+		<hr>
+		<img height="400" src="images/SQLite.png" alt="GBIF">
+	</section>
+	<section>
+		<h4>7. Using</h4>
+		<h2><a href="http://www.libreoffice.org">LibreOffice</a></h2>
+		<hr>
+		<img height="400" src="images/LibreOffice.png" alt="GBIF">
+	</section>
+	<section>
+		<h4>7. Using</h4>
+		<h2><a href="http://www.openrefine.org">OpenRefine</a></h2>
+		<hr>
+			<img height="400" src="images/OpenRefine.png" alt="GBIF">
+	</section>
+	<section>
+		<h4>7. Using</h4>
+		<h2><a href="http://www.qgis.org/">QuantumGIS</a></h2>
+		<hr>
+		<img height="400" src="images/QGIS.png" alt="GBIF">
+	</section>
+
+	<section>
+			<h4>7. Using</h4>
+			<h2>Featured GBIF Data Use</h2>
+			<hr>
+			<img src="images/f_Acridotheres tristis.jpg" alt="GBIF">
+			<img src="images/f_Hypsignathus monstrosus.jpg" alt="GBIF">
+			<img src="images/f_Sierra Madre Oriental small.jpg" alt="GBIF">
+			<ol>
+					<li><a href="http://www.gbif.org/page/11343">Building national watch lists for invasive alien species</a></li>
+					<li><a href="http://www.gbif.org/page/10596">Mapping the niche of Ebola host animals</a></li>
+					<li><a href="http://www.gbif.org/page/3023">Using models to inform conservation policies</a></li>
+			</ol>
+		</section>
+		<section>
+			<h4>7. Using</h4>
+			<h2>Feedback</h2>
+			<hr>
+			<img src="images/GBIF_feedback.png" alt="GBIF">			
+		</section>
+	</section>
+
+	<section id="Publishing">
+		<section>
+		<h2>8. Publishing</h2>
+		<hr>
+		<blockquote>Data publishing is the act of making data available on the Internet, so that they can be accessed, downloaded, analysed and reused by anyone for research or other purposes.</blockquote>
+		</section>
+		<section>
+		<h4>8. Publishing</h4>
+		<h2>Why publish my data?</h2>
+		<hr>
+		<ul class="fragment">
+			<li class="fragment">You contribute to global knowledge about biodiversity</li>
+			<li class="fragment">You receive proper credit for creating/curating data</li>
+			<li class="fragment">You increase visibility of publishing institutions through good metadata authoring</li>
+			<li class="fragment">You create new opportunities for collaboration</li>
+		</ul>
+		<p class="fragment">see <a href="http://www.gbif.org/publishingdata/howtopublish">How to publish your data through GBIF</a></p>
+		</section>
+	</section>
+	<section>
+		<h2>Thank you for your attention</h2>
+		<p>André Heughebaert, <a href="http://www.biodiversity.be">Belgian Biodiversity Platform</a></p>
+		<p><a href="mailto:a.heughebaert@biodiversity.be">a.heughebaert@biodiversity.be</a></p>
+		<img src="images/GBIF_logo_130pix.jpg" alt="GBIF">
+		<img src="images/BBPF logo.png" alt="BBPF">
+		<p><small>Made with <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> - HTML Presentations made easy</small></p>
+	</section>
+
+		</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
